@@ -9,6 +9,6 @@ export const environment = {
     jwtAuth: {
         API_AUTH_URL: '',
         TOKEN_VALUE_ACCESSOR: '',
-        expirationOffset: 120
+        expirationOffset: 120,
     },
 };

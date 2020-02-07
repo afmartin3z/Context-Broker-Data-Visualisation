@@ -53,7 +53,7 @@ import { VisitorsAnalyticsService } from './mock/visitors-analytics.service';
 import { SecurityCamerasService } from './mock/security-cameras.service';
 import { MockDataModule } from './mock/mock-data.module';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 const socialLinks = [
@@ -100,8 +100,8 @@ const ConfiguredTranslateModule = TranslateModule.forRoot({
     loader: {
         provide: TranslateLoader,
         useFactory: (createTranslateLoader),
-        deps: [HttpClient]
-    }
+        deps: [HttpClient],
+    },
 });
 
 export function createTranslateLoader(http: HttpClient) {
