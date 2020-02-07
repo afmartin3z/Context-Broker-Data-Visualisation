@@ -1,0 +1,9 @@
+{
+    "button": {
+        "login": "Acceder",
+        "logout": "Desconectar"
+    },
+    "main": "Hola test",
+    "menu": "Menú",
+    "title": "Context Broker Dashboard"
+}
