@@ -55,7 +55,6 @@ import { EarningCardBackComponent } from './earning-card/back-side/earning-card-
 import { EarningPieChartComponent } from './earning-card/back-side/earning-pie-chart.component';
 import { EarningCardFrontComponent } from './earning-card/front-side/earning-card-front.component';
 import { EarningLiveUpdateChartComponent } from './earning-card/front-side/earning-live-update-chart.component';
-import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -72,7 +71,6 @@ import { TranslateModule } from '@ngx-translate/core';
     NgxEchartsModule,
     NgxChartsModule,
     LeafletModule,
-    TranslateModule,
   ],
   declarations: [
     ECommerceComponent,
@@ -92,9 +90,9 @@ import { TranslateModule } from '@ngx-translate/core';
     TrafficBackCardComponent,
     TrafficBarComponent,
     TrafficCardsHeaderComponent,
-    // CountryOrdersComponent,
-    // CountryOrdersMapComponent,
-    // CountryOrdersChartComponent,
+    CountryOrdersComponent,
+    CountryOrdersMapComponent,
+    CountryOrdersChartComponent,
     ECommerceVisitorsAnalyticsComponent,
     ECommerceVisitorsAnalyticsChartComponent,
     ECommerceVisitorsStatisticsComponent,
@@ -109,7 +107,7 @@ import { TranslateModule } from '@ngx-translate/core';
     EarningLiveUpdateChartComponent,
   ],
   providers: [
-    // CountryOrdersMapService,
+    CountryOrdersMapService,
   ],
 })
 export class ECommerceModule { }

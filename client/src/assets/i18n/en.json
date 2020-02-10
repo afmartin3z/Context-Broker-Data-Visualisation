@@ -1,0 +1,9 @@
+{
+  "button": {
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "main": "Hello test",
+  "menu": "Menu",
+  "title": "Context Broker Dashboard"
+}

@@ -1,0 +1,7 @@
+curl -X GET 'http://localhost:8666/STH/v1/contextEntities/type/EEA_POLLUTION/id/EEA_POLLUTION:EEA_POLLUTION_ES1612A/attributes/NO2?lastN=10' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' | python -mjson.tool
+  
+  curl -X GET 'http://localhost:8666/STH/v1/contextEntities/type/EEA_POLLUTION/id/EEA_POLLUTION:EEA_POLLUTION_ES1312A/attributes/NO2?lastN=10' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' | python -mjson.tool

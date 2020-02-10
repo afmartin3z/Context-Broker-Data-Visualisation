@@ -1,0 +1,20 @@
+{
+  "/broker": {
+    "target": "http://localhost:1026",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/broker": ""
+    }
+  },
+  "/historic": {
+    "target": "http://localhost:8666",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/historic": ""
+    }
+  }
+}

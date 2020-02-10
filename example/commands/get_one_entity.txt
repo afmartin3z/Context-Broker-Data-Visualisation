@@ -1,0 +1,7 @@
+curl -X GET 'http://localhost:1026/v2/entities/EEA_POLLUTION:EEA_POLLUTION_ES1612A?options=keyValues' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' | python -mjson.tool
+  
+  curl -X GET 'http://localhost:1026/v2/entities/EEA_POLLUTION:EEA_POLLUTION_ES1312A?options=keyValues' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' | python -mjson.tool

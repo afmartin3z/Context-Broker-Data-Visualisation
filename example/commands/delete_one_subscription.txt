@@ -1,0 +1,3 @@
+curl -X DELETE --url 'http://localhost:1026/v2/subscriptions/5e2171ca98c96fca7e856a2c' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION'

@@ -1,0 +1,224 @@
+curl -iX POST 'http://localhost:1026/v2/subscriptions/' \
+  -H 'Content-Type: application/json' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' \
+  -d '{
+  "description": "Notify Cygnus of all EEA_POLLUTION changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "EEA_POLLUTION.*"
+      }
+    ],
+    "condition": {
+      "attrs": ["NO2"]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://cygnus:5050/notify"
+    },
+    "attrs": ["NO2"],
+    "attrsFormat": "legacy"
+  }
+}'
+
+curl -iX POST 'http://localhost:1026/v2/subscriptions/' \
+  -H 'Content-Type: application/json' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' \
+  -d '{
+  "description": "Notify Cygnus of all EEA_POLLUTION changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "EEA_POLLUTION.*"
+      }
+    ],
+    "condition": {
+      "attrs": ["SO2"]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://cygnus:5050/notify"
+    },
+    "attrs": ["SO2"],
+    "attrsFormat": "legacy"
+  }
+}'
+
+curl -iX POST 'http://localhost:1026/v2/subscriptions/' \
+  -H 'Content-Type: application/json' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' \
+  -d '{
+  "description": "Notify Cygnus of all EEA_POLLUTION changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "EEA_POLLUTION.*"
+      }
+    ],
+    "condition": {
+      "attrs": ["CO"]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://cygnus:5050/notify"
+    },
+    "attrs": ["CO"],
+    "attrsFormat": "legacy"
+  }
+}'
+
+curl -iX POST 'http://localhost:1026/v2/subscriptions/' \
+  -H 'Content-Type: application/json' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' \
+  -d '{
+  "description": "Notify Cygnus of all EEA_POLLUTION changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "EEA_POLLUTION.*"
+      }
+    ],
+    "condition": {
+      "attrs": ["O3"]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://cygnus:5050/notify"
+    },
+    "attrs": ["O3"],
+    "attrsFormat": "legacy"
+  }
+}'
+
+curl -iX POST 'http://localhost:1026/v2/subscriptions/' \
+  -H 'Content-Type: application/json' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' \
+  -d '{
+  "description": "Notify Cygnus of all EEA_POLLUTION changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "EEA_POLLUTION.*"
+      }
+    ],
+    "condition": {
+      "attrs": ["NO"]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://cygnus:5050/notify"
+    },
+    "attrs": ["NO"],
+    "attrsFormat": "legacy"
+  }
+}'
+
+curl -iX POST 'http://localhost:1026/v2/subscriptions/' \
+  -H 'Content-Type: application/json' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' \
+  -d '{
+  "description": "Notify Cygnus of all EEA_POLLUTION changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "EEA_POLLUTION.*"
+      }
+    ],
+    "condition": {
+      "attrs": ["C6H6"]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://cygnus:5050/notify"
+    },
+    "attrs": ["C6H6"],
+    "attrsFormat": "legacy"
+  }
+}'
+
+curl -iX POST 'http://localhost:1026/v2/subscriptions/' \
+  -H 'Content-Type: application/json' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' \
+  -d '{
+  "description": "Notify Cygnus of all EEA_POLLUTION changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "EEA_POLLUTION.*"
+      }
+    ],
+    "condition": {
+      "attrs": ["PM2.5"]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://cygnus:5050/notify"
+    },
+    "attrs": ["PM2.5"],
+    "attrsFormat": "legacy"
+  }
+}'
+
+curl -iX POST 'http://localhost:1026/v2/subscriptions/' \
+  -H 'Content-Type: application/json' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' \
+  -d '{
+  "description": "Notify Cygnus of all EEA_POLLUTION changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "EEA_POLLUTION.*"
+      }
+    ],
+    "condition": {
+      "attrs": ["PM10"]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://cygnus:5050/notify"
+    },
+    "attrs": ["PM10"],
+    "attrsFormat": "legacy"
+  }
+}'
+
+curl -iX POST 'http://localhost:1026/v2/subscriptions/' \
+  -H 'Content-Type: application/json' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' \
+  -d '{
+  "description": "Notify Cygnus of all EEA_POLLUTION changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "EEA_POLLUTION.*"
+      }
+    ],
+    "condition": {
+      "attrs": ["AQI"]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://cygnus:5050/notify"
+    },
+    "attrs": ["AQI"],
+    "attrsFormat": "legacy"
+  }
+}'

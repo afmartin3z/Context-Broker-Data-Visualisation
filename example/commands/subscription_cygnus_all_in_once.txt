@@ -1,0 +1,44 @@
+curl -iX POST 'http://localhost:1026/v2/subscriptions/' \
+  -H 'Content-Type: application/json' \
+  -H 'fiware-service: openiot' \
+  -H 'fiware-servicepath: /EEA_POLLUTION' \
+  -d '{
+  "description": "Notify Cygnus of all EEA_POLLUTION changes",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "EEA_POLLUTION.*"
+      }
+    ],
+    "condition": {
+      "attrs": [
+        "NO2",
+        "SO2",
+        "CO",
+        "O3",
+        "NO",
+        "C6H6",
+        "PM2.5",
+        "PM10",
+        "AQI"
+      ]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://cygnus:5050/notify"
+    },
+    "attrs": [
+      "NO2",
+      "SO2",
+      "CO",
+      "O3",
+      "NO",
+      "C6H6",
+      "PM2.5",
+      "PM10",
+      "AQI"
+    ],
+    "attrsFormat": "legacy"
+  }
+}'

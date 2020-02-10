@@ -1,0 +1,13 @@
+<div class="contenedor">
+  <h1>{{ 'main' | translate }}</h1>
+  <div class="contenedor-botones">
+    <button [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')">Español</button>
+    <button [ngClass]="{'active': activeLang == 'en'}" (click)="cambiarLenguaje('en')">Inglés</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xxl-9">
+    <!-- <ngx-country-orders></ngx-country-orders> -->
+  </div>
+</div>
