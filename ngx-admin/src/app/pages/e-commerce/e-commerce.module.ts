@@ -90,9 +90,9 @@ import { EarningLiveUpdateChartComponent } from './earning-card/front-side/earni
     TrafficBackCardComponent,
     TrafficBarComponent,
     TrafficCardsHeaderComponent,
-    CountryOrdersComponent,
-    CountryOrdersMapComponent,
-    CountryOrdersChartComponent,
+    // CountryOrdersComponent,
+    // CountryOrdersMapComponent,
+    // CountryOrdersChartComponent,
     ECommerceVisitorsAnalyticsComponent,
     ECommerceVisitorsAnalyticsChartComponent,
     ECommerceVisitorsStatisticsComponent,
@@ -107,7 +107,7 @@ import { EarningLiveUpdateChartComponent } from './earning-card/front-side/earni
     EarningLiveUpdateChartComponent,
   ],
   providers: [
-    CountryOrdersMapService,
+    // CountryOrdersMapService,
   ],
 })
 export class ECommerceModule { }
