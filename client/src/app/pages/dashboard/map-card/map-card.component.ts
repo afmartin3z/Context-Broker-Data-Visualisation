@@ -6,12 +6,10 @@ import { takeWhile } from 'rxjs/operators';
   selector: 'app-map-card',
   styleUrls: ['./map-card.component.scss'],
   template: `
-    <nb-card [size]="breakpoint.width >= breakpoints.md ? 'medium' : 'giant'">
-      <nb-card-body>
-        <app-map>
-        </app-map>
-      </nb-card-body>
-    </nb-card>
+    <div>
+      <app-map>
+      </app-map>
+    </div>
   `,
 })
 export class MapCardComponent implements OnDestroy {
@@ -37,4 +35,5 @@ export class MapCardComponent implements OnDestroy {
   ngOnDestroy() {
     this.alive = false;
   }
+
 }

@@ -6,12 +6,11 @@ import { NbThemeService } from '@nebular/theme';
 import { combineLatest } from 'rxjs';
 import { takeWhile } from 'rxjs/operators';
 
-
 @Component({
   selector: 'app-map',
   styleUrls: ['./map.component.scss'],
   template: `
-    <div leaflet [leafletOptions]="options" [leafletLayers]="layers" (leafletMapReady)="mapReady($event)"></div>
+    <div id=map leaflet [leafletOptions]="options" [leafletLayers]="layers" (leafletMapReady)="mapReady($event)"></div>
   `,
 })
 export class MapComponent implements OnDestroy {
