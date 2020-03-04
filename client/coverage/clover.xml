@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1583324792134" clover="3.2.0">
+  <project timestamp="1583324792134" name="All files">
+    <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0" elements="8" coveredelements="4" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
+    <file name="jestGlobalMocks.ts" path="C:\context_broker_environment\workspace\client\src\jestGlobalMocks.ts">
+      <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>

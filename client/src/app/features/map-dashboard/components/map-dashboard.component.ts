@@ -40,9 +40,9 @@ export class MapDashboardComponent implements OnInit, AfterViewInit {
   }
 
   public ngAfterViewInit(): void {
-    this.loadMap();
-    this.loadSearchBar();
-    this.loadEntities();
+    // this.loadMap();
+    // this.loadSearchBar();
+    // this.loadEntities();
   }
 
   protected onNodeSelect(event: any): void {

@@ -9,7 +9,10 @@
                     {
                         "type": "AirQualityObserved",
                         "service": "openiot",
-                        "servicePath": "/AirQualityObserved"
+                        "servicePath": "/AirQualityObserved",
+                        "attrs": [
+                            "pollution"
+                        ]
                     },
                     {
                         "type": "OffStreetParking",
