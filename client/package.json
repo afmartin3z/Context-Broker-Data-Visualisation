@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.json --port 5200",
     "build": "ng build",
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand",
     "test:cc": "jest --coverage",
@@ -23,6 +23,10 @@
     ],
     "globals": {
       "ts-jest": {
+        "astTransformers": [
+          "<rootDir>/node_modules/jest-preset-angular/build/InlineFilesTransformer",
+          "<rootDir>/node_modules/jest-preset-angular/build/StripStylesTransformer"
+        ],
         "diagnostics": {
           "ignoreCodes": [
             "TS151001"
