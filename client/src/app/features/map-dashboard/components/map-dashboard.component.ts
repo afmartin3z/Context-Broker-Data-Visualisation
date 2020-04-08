@@ -157,7 +157,7 @@ export class MapDashboardComponent extends BaseComponent implements OnInit, Afte
 
         this.map.on('zoomstart', (event) => {
             this.markerClusterGroup.getLayers().forEach(l => {
-                l.closeTooltip();
+                // l.closeTooltip();
             });
         });
 
@@ -170,7 +170,7 @@ export class MapDashboardComponent extends BaseComponent implements OnInit, Afte
 
         this.map.on('zoomend', (event) => {
             this.markerClusterGroup.getLayers().forEach(l => {
-                // l.openTooltip();
+                // l.openTooltip(); // needed?
             });
         });
     }
@@ -300,13 +300,13 @@ export class MapDashboardComponent extends BaseComponent implements OnInit, Afte
         }
     }
 
-    private insertEntity(model: ModelDto, entity: Entity, parentKey: string): void {
+    private insertEntity(model: ModelDto, entity: any, parentKey: string): void {
         const marker: L.Marker = L.marker(
             entity.location.coordinates.reverse() as L.LatLngExpression,
             { icon: LeafletIcons.icons[parentKey] },
         );
 
-        marker.bindTooltip('<b>source: www.aeme.com</b>', {
+        marker.bindTooltip('<b>name: ' + entity.name + '</b><br/><b>availableSpotNumber: ' + entity.availableSpotNumber + '</b>', {
             offset: new L.Point(0, 5),
             direction: 'top',
             // permanent: true,
@@ -318,7 +318,7 @@ export class MapDashboardComponent extends BaseComponent implements OnInit, Afte
         });
 
         marker.on('click', event => {
-            marker.closeTooltip();
+            // marker.closeTooltip();
         });
 
         const popup: L.Popup = L.popup();

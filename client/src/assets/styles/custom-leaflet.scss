@@ -60,7 +60,7 @@ div.leaflet-popup-content-wrapper {
 *****************************************************************************/
 
 .leaflet-tooltip {
-    color: white;
+    color: $textColor;
     background-color: $primaryLightColor;
     border: 1px solid transparent;
     border-radius: 10px;
