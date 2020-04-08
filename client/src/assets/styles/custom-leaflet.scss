@@ -54,3 +54,23 @@ div.leaflet-popup-content-wrapper {
 .leaflet-container a.leaflet-popup-close-button:hover {
     color: $textColor;
 }
+
+/*****************************************************************************
+ Tooltip
+*****************************************************************************/
+
+.leaflet-tooltip {
+    color: white;
+    background-color: $primaryLightColor;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px transparent;
+}
+
+.leaflet-tooltip-top:before {
+    border-top-color: transparent;
+}
+
+.leaflet-container {
+    font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}

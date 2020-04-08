@@ -11,6 +11,7 @@ export class LeafletIcons {
             iconSize: [LeafletIcons.iconSize, LeafletIcons.iconSize],
             iconAnchor: [LeafletIcons.iconSize / 2, LeafletIcons.iconSize],
             popupAnchor: [0, -LeafletIcons.iconSize],
+            tooltipAnchor: [0, -LeafletIcons.iconSize],
         }),
 
         smartEnvironment: L.icon({
@@ -18,6 +19,7 @@ export class LeafletIcons {
             iconSize: [LeafletIcons.iconSize, LeafletIcons.iconSize],
             iconAnchor: [LeafletIcons.iconSize / 2, LeafletIcons.iconSize],
             popupAnchor: [0, -LeafletIcons.iconSize],
+            tooltipAnchor: [0, -LeafletIcons.iconSize],
         }),
 
         environment: L.icon({
@@ -25,6 +27,7 @@ export class LeafletIcons {
             iconSize: [LeafletIcons.iconSize, LeafletIcons.iconSize],
             iconAnchor: [LeafletIcons.iconSize / 2, LeafletIcons.iconSize],
             popupAnchor: [0, -LeafletIcons.iconSize],
+            tooltipAnchor: [0, -LeafletIcons.iconSize],
         }),
 
         pointOfInterest: L.icon({
@@ -32,6 +35,7 @@ export class LeafletIcons {
             iconSize: [LeafletIcons.iconSize, LeafletIcons.iconSize],
             iconAnchor: [LeafletIcons.iconSize / 2, LeafletIcons.iconSize],
             popupAnchor: [0, -LeafletIcons.iconSize],
+            tooltipAnchor: [0, -LeafletIcons.iconSize],
         }),
 
         civicIssuesTracking: L.icon({
@@ -39,6 +43,7 @@ export class LeafletIcons {
             iconSize: [LeafletIcons.iconSize, LeafletIcons.iconSize],
             iconAnchor: [LeafletIcons.iconSize / 2, LeafletIcons.iconSize],
             popupAnchor: [0, -LeafletIcons.iconSize],
+            tooltipAnchor: [0, -LeafletIcons.iconSize],
         }),
 
         streetLighting: L.icon({
@@ -46,6 +51,7 @@ export class LeafletIcons {
             iconSize: [LeafletIcons.iconSize, LeafletIcons.iconSize],
             iconAnchor: [LeafletIcons.iconSize / 2, LeafletIcons.iconSize],
             popupAnchor: [0, -LeafletIcons.iconSize],
+            tooltipAnchor: [0, -LeafletIcons.iconSize],
         }),
 
         device: L.icon({
@@ -53,6 +59,7 @@ export class LeafletIcons {
             iconSize: [LeafletIcons.iconSize, LeafletIcons.iconSize],
             iconAnchor: [LeafletIcons.iconSize / 2, LeafletIcons.iconSize],
             popupAnchor: [0, -LeafletIcons.iconSize],
+            tooltipAnchor: [0, -LeafletIcons.iconSize],
         }),
 
         transport: L.icon({
@@ -60,6 +67,7 @@ export class LeafletIcons {
             iconSize: [LeafletIcons.iconSize, LeafletIcons.iconSize],
             iconAnchor: [LeafletIcons.iconSize / 2, LeafletIcons.iconSize],
             popupAnchor: [0, -LeafletIcons.iconSize],
+            tooltipAnchor: [0, -LeafletIcons.iconSize],
         }),
 
         indicators: L.icon({
@@ -67,6 +75,7 @@ export class LeafletIcons {
             iconSize: [LeafletIcons.iconSize, LeafletIcons.iconSize],
             iconAnchor: [LeafletIcons.iconSize / 2, LeafletIcons.iconSize],
             popupAnchor: [0, -LeafletIcons.iconSize],
+            tooltipAnchor: [0, -LeafletIcons.iconSize],
         }),
 
         wasteManagement: L.icon({
@@ -74,6 +83,7 @@ export class LeafletIcons {
             iconSize: [LeafletIcons.iconSize, LeafletIcons.iconSize],
             iconAnchor: [LeafletIcons.iconSize / 2, LeafletIcons.iconSize],
             popupAnchor: [0, -LeafletIcons.iconSize],
+            tooltipAnchor: [0, -LeafletIcons.iconSize],
         }),
 
         parking: L.icon({
@@ -81,6 +91,7 @@ export class LeafletIcons {
             iconSize: [LeafletIcons.iconSize, LeafletIcons.iconSize],
             iconAnchor: [LeafletIcons.iconSize / 2, LeafletIcons.iconSize],
             popupAnchor: [0, -LeafletIcons.iconSize],
+            tooltipAnchor: [0, -LeafletIcons.iconSize],
         }),
 
         weather: L.icon({
@@ -88,6 +99,7 @@ export class LeafletIcons {
             iconSize: [LeafletIcons.iconSize, LeafletIcons.iconSize],
             iconAnchor: [LeafletIcons.iconSize / 2, LeafletIcons.iconSize],
             popupAnchor: [0, -LeafletIcons.iconSize],
+            tooltipAnchor: [0, -LeafletIcons.iconSize],
         }),
 
         generic: L.icon({
@@ -95,6 +107,7 @@ export class LeafletIcons {
             iconSize: [LeafletIcons.iconSize, LeafletIcons.iconSize],
             iconAnchor: [LeafletIcons.iconSize / 2, LeafletIcons.iconSize],
             popupAnchor: [0, -LeafletIcons.iconSize],
+            tooltipAnchor: [0, -LeafletIcons.iconSize],
         }),
 
     };

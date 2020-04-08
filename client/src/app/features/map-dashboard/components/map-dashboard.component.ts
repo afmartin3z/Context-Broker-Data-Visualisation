@@ -154,6 +154,25 @@ export class MapDashboardComponent extends BaseComponent implements OnInit, Afte
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
         }).addTo(this.map);
+
+        this.map.on('zoomstart', (event) => {
+            this.markerClusterGroup.getLayers().forEach(l => {
+                l.closeTooltip();
+            });
+        });
+
+        this.map.addLayer(this.markerClusterGroup);
+        this.markerClusterGroup.on('animationend', () => {
+            this.markerClusterGroup.getLayers().forEach(l => {
+                // l.openTooltip();
+            });
+        });
+
+        this.map.on('zoomend', (event) => {
+            this.markerClusterGroup.getLayers().forEach(l => {
+                // l.openTooltip();
+            });
+        });
     }
 
     private loadSearchBar(): void {
@@ -287,6 +306,21 @@ export class MapDashboardComponent extends BaseComponent implements OnInit, Afte
             { icon: LeafletIcons.icons[parentKey] },
         );
 
+        marker.bindTooltip('<b>source: www.aeme.com</b>', {
+            offset: new L.Point(0, 5),
+            direction: 'top',
+            // permanent: true,
+            opacity: 0.9,
+        }).openTooltip();
+
+        marker.on('popupclose', event => {
+            // marker.openTooltip();
+        });
+
+        marker.on('click', event => {
+            marker.closeTooltip();
+        });
+
         const popup: L.Popup = L.popup();
         popup.setContent(this.popupService.getPopupContent(entity));
         marker.bindPopup(popup);
@@ -343,7 +377,5 @@ export class MapDashboardComponent extends BaseComponent implements OnInit, Afte
         Object.values(this.layerGroups).forEach(lg => {
             this.markerClusterGroup.addLayer(lg);
         });
-
-        this.map.addLayer(this.markerClusterGroup);
     }
 }
