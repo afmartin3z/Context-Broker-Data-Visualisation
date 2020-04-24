@@ -1,0 +1,35 @@
+version: "3.5"
+
+services:
+  cbenabler-server:
+    # image: enabler_server
+    build: server/
+    # hostname: cbenabler-server
+    container_name: cbenabler-server-ld
+    ports:
+      - 3006:3006
+    # ports:
+    #     - target: 3006
+    #       published: 3006
+    #       protocol: tcp
+    #       mode: host
+    # expose:
+    #   - 3006
+    network_mode: host
+    # networks:
+    #   - default
+
+  cbenabler:
+    # image: enabler_client
+    build: client/
+    # hostname: cbenabler
+    container_name: cbenabler-ld
+    depends_on:
+      - cbenabler-server
+    ports:
+      - 80:80
+    # networks:
+    #   - default
+
+# networks:
+#   default: ~

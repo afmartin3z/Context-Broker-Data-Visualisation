@@ -1,6 +1,6 @@
 {
     "/server": {
-        "target": "http://localhost:3006",
+        "target": "cbenabler-server-ld:3006",
         "secure": false,
         "pathRewrite": {
             "^/server": ""
